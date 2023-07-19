@@ -1,0 +1,177 @@
+@font-face {
+    font-family: WorkSans;
+    src: url(../font/WorkSans-VariableFont_wght.ttf);
+    font-weight:400;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: WorkSans, sans-serif;
+}
+
+.page-header {
+    display: flex;
+    justify-content: end;
+    margin-top: 10rem;
+    margin-right: 2rem;
+}
+
+.nav-item {
+    text-decoration: none;
+    font-size: 2rem;
+    line-height: 145%;
+    color: #939596;
+}
+
+.nav-item.current {
+    color: #090A0A;  
+}
+
+.nav-item:first-child {
+    margin-right: 4.8rem;
+}
+
+.subtitle-main {
+    font-size: 2rem;
+    line-height: 50%;
+}
+
+.about-main {
+    font-size: 1.7rem;
+    line-height: 1;
+    color: #939596;
+}
+
+.pic-main {
+    display: block;
+    margin-top: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.subtitle-grid {
+    font-size: 2rem;
+    line-height: 50%;
+}
+
+.about-grid {
+    font-size: 1.7rem;
+    line-height: 1;
+    color: #939596;
+    display: block;
+}
+
+.page-footer {
+    display: flex;
+    margin-top: 14.4rem;
+    margin-bottom: 4.4rem;
+    justify-content: space-between;
+}
+
+.link-block a {
+    text-decoration: none;
+    color: #1C17FF;
+    font-size: 1.7rem;
+    line-height: 2.04rem;
+}
+
+@media screen and (min-width: 700px) {
+    .mobile {
+        display: none;
+    } 
+    
+    .mobile.pic-grid {
+        display: none;
+    }
+    
+    .container {
+        max-width: 132rem;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+
+    .tit {
+        display: flex;
+    }
+
+    .title {
+        font-size: 3.6rem;
+        line-height: 140%;
+        margin-top: 10rem;
+        flex-basis: 67rem;
+        height: auto;
+    }
+
+    .pic-main {
+        max-width: 128rem;
+    }
+
+    .grid {
+        display: flex;
+        max-width: 128rem;
+        justify-content: space-between;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .pic-grid {
+        display: block;
+        margin-top: 8rem;
+        max-width: 41.333rem;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 699px) {
+    .desktop {
+        display: none;
+    }
+
+    .desktop.pic-grid {
+        display: none;
+    }
+    
+    .container {
+        max-width: 36.3rem;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+
+    .title {
+        font-size: 3.6rem;
+        line-height: 140%;
+        margin-top: 4rem;
+    }
+
+    .pic-main {
+        max-width: 34.3rem;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pic-grid {
+        display: block;
+        margin-top: 4rem;
+        max-width: 34.3rem;
+        width: 100%;
+    }
+}

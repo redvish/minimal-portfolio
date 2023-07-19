@@ -1,0 +1,344 @@
+@font-face {
+    font-family: WorkSans;
+    src: url(../font/WorkSans-VariableFont_wght.ttf);
+    font-weight: 400;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: WorkSans, sans-serif;
+}
+.page-header {
+    display: flex;
+    justify-content: end;
+    margin-top: 10rem;
+    margin-right: 2rem;
+}
+
+.nav-item {
+    text-decoration: none;
+    font-size: 2rem;
+    line-height: 145%;
+    color: #939596;
+}
+
+.nav-item.current {
+    color: #090A0A;  
+}
+
+.nav-item:first-child {
+    margin-right: 4.8rem;
+}
+
+.project-info {
+    display: flex;
+    margin-top: 10rem;
+}
+
+.project-info h1 {
+    font-size: 3.6rem;
+    line-height: 140%;
+    margin: 0;
+    padding: 0;
+}
+
+.description p {
+    font-size: 1.7rem;
+    line-height: 200%;
+    margin: 0;
+    padding: 0;
+}
+
+p.short-description {
+    line-height: 160%;
+    margin-top: 4rem;
+}
+
+.pic-project {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 128rem;
+    width: 100%;
+}
+
+h2 {
+    font-size: 2.8rem;
+    line-height: 140%;
+}
+
+.overview {
+    margin-top: 8rem;
+}
+
+.overview p {
+    font-size: 1.7rem;
+    line-height: 160%;
+}
+
+.pic-overview {
+    display: block;
+    margin-top: 4rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
+
+.branding {
+    margin-top: 8rem;
+}
+
+.branding p {
+    font-size: 1.7rem;
+    line-height: 160%;
+}
+
+.grid-branding {
+    display: flex;
+}
+
+.grid-branding img {
+    display: block;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.ui-design {
+    margin-top: 8rem;
+}
+
+.ui-design p {
+    font-size: 1.7rem;
+    line-height: 160%;
+}
+
+.grid-design {
+    display: flex;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.grid-item {
+    display: block;   
+    width: 100%;
+}
+
+.background {
+    display: flex;
+    background-color: #292F32;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 4rem;
+}
+
+.img-last {
+    display: block;
+    width: 100%;    
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.background:nth-child(1) {
+    margin-top: 8rem;
+}
+
+.next-project p {
+    font-size: 1.5rem;
+    line-height: 100%;
+    color: #7C7E80;
+    margin-top: 8rem;
+}
+
+h3 {
+    font-size: 2rem;
+    line-height: 20%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.page-footer {
+    display: flex;
+    margin-top: 14.4rem;
+    margin-bottom: 4.4rem;
+    justify-content: space-between;
+}
+
+.link-block a {
+    text-decoration: none;
+    color: #1C17FF;
+    font-size: 1.7rem;
+    line-height: 2.04rem;
+}
+
+.footer-social {
+    display: inline;
+}
+
+.social-item:first-child {
+    margin-right: 1.6rem;
+}
+
+@media screen and (min-width: 700px) {
+    .mobile  {
+        display: none;
+    }
+
+    img.mobile{
+        display: none;
+    }
+
+    .container {
+        max-width: 132rem;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+
+    .text {
+        max-width: 67rem;
+    }
+
+    .project-info h1 {
+        flex-basis: 49.5rem;
+    }
+
+    .description p {
+        flex-basis: 78.5rem;
+    }
+
+    .pic-project {
+        margin-top: 4rem;
+        max-width: 128rem;
+    }
+
+    .pic-overview {
+        max-width: 128rem;
+    }
+
+    .grid-branding {
+        max-width: 128rem;
+        justify-content: space-between;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .grid-branding img {
+        max-width: 63rem;
+    }
+
+    .grid-design {
+        width: 86.6rem;
+        height: 59rem;
+        margin-top: 5.5rem;
+    }
+
+    .grid-item {
+        max-width: 25.1198rem;
+        height: 54.2588rem;    
+    }
+
+    .grid-item:nth-child(2) {
+        margin-top: 2.371rem;
+        margin-bottom: 2.37rem;
+    }
+    
+    .grid-item:nth-child(3) {
+        margin-top: 4.741rem;
+    }
+
+    .background {
+        max-width: 128rem;
+        height: 70rem;
+    }
+
+    .img-last {
+        max-width: 64.8rem;
+        height: 62.3rem;
+        margin-top: 7.7rem;
+    }
+}
+
+@media screen and (max-width: 699px) {
+    .desktop {
+        display: none;
+    }
+
+    img.desktop{
+        display: none;
+    }
+
+    .container {
+        max-width: 36.3rem;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+
+    .project-info {
+        flex-direction: column;
+    }
+
+    .pic-project {
+        margin-top: 8rem;
+        max-width: 34.3rem;
+    }
+
+    .pic-overview {
+        max-width: 34.3rem;
+    }
+
+    .grid-branding {
+        flex-direction: column;
+    }
+
+    .grid-branding img {
+        max-width: 34.3rem;
+    }
+
+    .grid-branding img:last-child {
+        margin-top: 2rem;
+    }
+
+    .grid-design {
+        width: 31.0001rem;
+        height: 21.1202rem;
+        margin-top: 6.94rem;
+    }
+
+    .grid-item {
+        max-width: 8.9921rem;
+        height: 19.423rem;    
+    }
+
+    .grid-item:nth-child(2) {
+        margin-top: .849rem;
+        margin-bottom: .849rem;
+    }
+    
+    .grid-item:nth-child(3) {
+        margin-top: 1.697rem;
+    }
+
+    .background {
+        max-width: 34.3rem;
+        height: 35rem;
+    }
+
+    .img-last {
+        max-width: 31rem;
+        height: 36.6S451rem;
+        margin-top: 7.7rem;
+    }
+}
